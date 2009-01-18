@@ -18,6 +18,9 @@ set incsearch   " incremental search, search as you type
 set ignorecase  " Ignore case when searching
 set smartcase   " Ignore case when searching lowercase
 
+"======================= Plugin TOhtml ==============================
+let html_use_css = 1 " Use css by default
+
 "====================== Colors =======================================
 if has("gui_running")
     set t_Co=256        " 256 color Terminal
@@ -29,14 +32,20 @@ else
     colorscheme metacosm
 endif
 
-syntax on " Enable Syntax highlighting
+if !exists("syntax_on")
+    syntax on " Enable Syntax highlighting
+endif
 
 "====================== GUI Only =====================================
+" this is like gvimrc, i have too litle gui configurations.
+" so I prefered put here.
+
 if has("gui_running")
     set guifont=Droid\ Sans\ Mono\ 11     " Font configuration
     set guioptions-=m                     " Disable the menu bar
     set guioptions-=T                     " Disable the toolbar
     set mousehide                         " Hide mouse after chars typed
+    " set ch=2		                      " Make command line two lines high
 endif
 
 "====================== Status Line ==================================
@@ -77,6 +86,7 @@ set ttyfast                 " smoother changes
 set tabstop=4               " Set a tab to 4 spaces
 set scrolloff=10            " keep 10 lines when scrolling
 set clipboard+="unnamed"    " the register "* is set by default
+set mouse=a                 " In many terminal emulators the mouse works
 
 "========================= Tabs ====================================
 set expandtab       " tabs are converted to spaces
@@ -100,7 +110,8 @@ autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete " may require rub
 "========================= Load Plugins ============================
 let loaded_vimspell = 1
 
-autocmd FileType text setlocal textwidth=78
+" For all text files set 'textwidth' to 78 characters
+autocmd FileType text setlocal textwidth=78             
 autocmd Filetype ruby source $HOME/.vim/ruby-macros.vim
 
 "======================== Completions ==============================
@@ -143,4 +154,11 @@ command! -nargs=0 Lorem :normal iLorem ipsum dolor sit amet, consectetur
       \ proident, sunt in culpa qui officia deserunt mollit anim id est
       \ laborum
 
+" When editing a file, always jump to the last known cursor position.
+" Don't do it when the position is invalid or when inside an event handler
+" (happens when dropping a file on gvim).
+autocmd BufReadPost *
+\ if line("'\"") > 0 && line("'\"") <= line("$") |
+\   exe "normal! g`\"" |
+\ endif
 
