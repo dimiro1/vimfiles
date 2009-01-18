@@ -23,13 +23,13 @@ let html_use_css = 1 " Use css by default
 
 "====================== Colors =======================================
 if has("gui_running")
-    set t_Co=256        " 256 color Terminal
     set lines=40        " start window with 40 lines
     set columns=115     " start window with 115 columns
     colorscheme wombat
 else
+    set t_Co=256        " 256 color Terminal
     let g:CSApprox_loaded = 0 " Algorithm to try close the gui-colorschme in terminal
-    colorscheme metacosm
+    colorscheme railscasts
 endif
 
 if !exists("syntax_on")
