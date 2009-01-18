@@ -3,6 +3,8 @@ try
 catch /E484/
 endtry
 
+runtime debian.vim
+
 set nocompatible    " We're running Vim, not Vi!
 
 "======================== Indenting ==================================
