@@ -47,7 +47,6 @@ if has("gui_running")
     set guioptions-=m                     " Disable the menu bar
     set guioptions-=T                     " Disable the toolbar
     set mousehide                         " Hide mouse after chars typed
-    " set ch=2		                      " Make command line two lines high
 endif
 
 "====================== Status Line ==================================
@@ -87,8 +86,9 @@ set title                   " show title in console title bar
 set ttyfast                 " smoother changes
 set tabstop=4               " Set a tab to 4 spaces
 set scrolloff=10            " keep 10 lines when scrolling
-set clipboard+="unnamed"    " the register "* is set by default
+" set clipboard+=unnamed    \" the register "* is set by default
 set mouse=a                 " In many terminal emulators the mouse works
+" set ch=2		            " Make command line two lines high
 
 "========================= Tab key ====================================
 set expandtab                       " tabs are converted to spaces
