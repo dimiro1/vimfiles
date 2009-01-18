@@ -90,10 +90,13 @@ set scrolloff=10            " keep 10 lines when scrolling
 set clipboard+="unnamed"    " the register "* is set by default
 set mouse=a                 " In many terminal emulators the mouse works
 
-"========================= Tabs ====================================
-set expandtab       " tabs are converted to spaces
-vnoremap < <gv      " unindent a block of code visualy
-vnoremap > >gv      " indent a block of code visualy
+"========================= Tab key ====================================
+set expandtab                       " tabs are converted to spaces
+vnoremap < <gv                      " unindent a block of code visualy
+vnoremap > >gv                      " indent a block of code visualy
+set wildmode=list:longest           " make cmdline tab completion similar to bash
+set wildmenu                        " enable ctrl-n and ctrl-p to scroll thru matches
+set wildignore=*.o,*.obj,*~,*.swp   " stuff to ignore when tab completing
 
 
 "======================== Omni Completion ==========================
