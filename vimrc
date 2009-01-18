@@ -78,7 +78,7 @@ filetype indent on  " Enable filetype-specific indenting
 filetype plugin on  " Enable filetype-specific plugins
 
 "======================= Misc =====================================
-set history=1000            " keep 1000 lines of command line history
+set history=500             " keep 500 lines of command line history
 set nosol                   " cursor is kept in the same column (if possible)
 set sm                      " show matching braces, somewhat annoying...
 set number                  " show line numbers
