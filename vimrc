@@ -27,7 +27,7 @@ let html_use_css = 1 " Use css by default
 if has("gui_running")
     set lines=40        " start window with 40 lines
     set columns=115     " start window with 115 columns
-    colorscheme wombat
+    colorscheme railscasts
 else
     set t_Co=256        " 256 color Terminal
     let g:CSApprox_loaded = 0 " Algorithm to try close the gui-colorschme in terminal
@@ -43,7 +43,7 @@ endif
 " so I prefered put here.
 
 if has("gui_running")
-    set guifont=Droid\ Sans\ Mono\ 11     " Font configuration
+    set guifont=Droid\ Sans\ Mono\ 12     " Font configuration
     set guioptions-=m                     " Disable the menu bar
     set guioptions-=T                     " Disable the toolbar
     set mousehide                         " Hide mouse after chars typed
