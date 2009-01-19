@@ -51,8 +51,8 @@ highlight CursorLine                guibg=#000000 ctermbg=233 cterm=NONE
 highlight Comment                   guifg=#BC9458 ctermfg=180 gui=italic
 highlight Constant                  guifg=#6D9CBE ctermfg=73
 highlight Define                    guifg=#d7875f ctermfg=173
-highlight Error                     guifg=#FFC66D ctermfg=221 guibg=#990000 ctermbg=88
-highlight Function                  guifg=#FFC66D ctermfg=221 gui=NONE cterm=NONE
+highlight Error                     guifg=#EDC859 ctermfg=221 guibg=#990000 ctermbg=88
+highlight Function                  guifg=#EDC859 ctermfg=221 gui=NONE cterm=NONE
 highlight Identifier                guifg=#6D9CBE ctermfg=73 gui=NONE cterm=NONE
 highlight Include                   guifg=#d7875f ctermfg=173 gui=NONE cterm=NONE
 highlight PreCondit                 guifg=#d7875f ctermfg=173 gui=NONE cterm=NONE
@@ -79,7 +79,7 @@ highlight rubyInstanceVariable      guifg=#D0D0FF ctermfg=189
 highlight rubyInterpolation         guifg=#519F50 ctermfg=107
 highlight rubyLocalVariableOrMethod guifg=#D0D0FF ctermfg=189
 highlight rubyPredefinedConstant    guifg=#B85252 ctermfg=167
-highlight rubyPseudoVariable        guifg=#FFC66D ctermfg=221
+highlight rubyPseudoVariable        guifg=#EDC859 ctermfg=221
 highlight rubyStringDelimiter       guifg=#A5C261 ctermfg=143
 
 highlight xmlTag                    guifg=#E8BF6A ctermfg=179
@@ -87,7 +87,7 @@ highlight xmlTagName                guifg=#E8BF6A ctermfg=179
 highlight xmlEndTag                 guifg=#E8BF6A ctermfg=179
 
 highlight mailSubject               guifg=#A5C261 ctermfg=107
-highlight mailHeaderKey             guifg=#FFC66D ctermfg=221
+highlight mailHeaderKey             guifg=#EDC859 ctermfg=221
 highlight mailEmail                 guifg=#A5C261 ctermfg=107 gui=italic cterm=underline
 
 highlight SpellBad                  guifg=#D70000 ctermfg=160 ctermbg=NONE cterm=underline
