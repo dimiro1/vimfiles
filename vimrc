@@ -124,7 +124,7 @@ autocmd FileType text setlocal textwidth=78
 autocmd Filetype ruby source $HOME/.vim/ruby-macros.vim
 
 "======================== Completions ==============================
-" To don't type wrong
+" for don't type wrong
 iab linux GNU/Linux
 iab Linux GNU/Linux
 
