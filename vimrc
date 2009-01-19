@@ -6,6 +6,7 @@ endtry
 runtime debian.vim
 
 set nocompatible    " We're running Vim, not Vi!
+let mapleader = "," " set <Leader> to ','
 
 "======================== Indenting ==================================
 set ai " Automatically set the indent of a new line (local to buffer)
@@ -65,8 +66,11 @@ set backspace=2     " allow backspacing over everything in insert mode
 set shiftwidth=4    " numbers of spaces to (auto)indent
 
 "========================== Mappings ==================================
-map ,y "*y
-map ,p "*p
+map <Leader>y "*y
+map <Leader>p "*p
+" the correct is use the command :NERDTreeToggle but doest work well
+nmap <F9> :NERDTree<CR>
+nmap <F8> :NERDTreeClose<CR>
 
 " reload vimrc
 nnoremap <F12> :source $HOME/.vimrc<BAR> echo "reloaded vimrc!"<CR>
