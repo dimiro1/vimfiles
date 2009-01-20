@@ -68,12 +68,12 @@ set shiftwidth=4    " numbers of spaces to (auto)indent
 "========================== Mappings ==================================
 map <Leader>y "*y
 map <Leader>p "*p
-" the correct is use the command :NERDTreeToggle but doest work well
-nmap <F9> :NERDTree<CR>
-nmap <F8> :NERDTreeClose<CR>
+
+" map <F9> to ability nerd tree
+nmap <silent><F9> :NERDTreeToggle<CR>
 
 " reload vimrc
-nnoremap <F12> :source $HOME/.vimrc<BAR> echo "reloaded vimrc!"<CR>
+nnoremap <silent><F12> :source $HOME/.vimrc<BAR> echo "reloaded vimrc!"<CR>
 
 "======================== File stuff ==============================
 filetype on         " Enable filetype detection
