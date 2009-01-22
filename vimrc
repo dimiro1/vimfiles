@@ -78,7 +78,15 @@ nnoremap <silent><F12> :source $HOME/.vimrc<BAR> echo "reloaded vimrc!"<CR>
 " Open a fuzzyfilefinder like textmate
 map <silent><S-t> :FuzzyFinderTextMate<CR>
 
+" Works like emacs to open a file
 nmap <C-X><C-F> :e 
+
+" Maps to go to buffers quickly
+map <silent><S-RIGHT> :bn<CR>
+map <silent><S-LEFT> :bp<CR>
+
+" Go to list of open buffers
+nmap <silent><S-UP> :BufExplorer<CR>
 
 
 "======================== File stuff ==============================
