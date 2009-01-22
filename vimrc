@@ -78,6 +78,8 @@ nnoremap <silent><F12> :source $HOME/.vimrc<BAR> echo "reloaded vimrc!"<CR>
 " Open a fuzzyfilefinder like textmate
 map <S-t> :FuzzyFinderTextMate<CR>
 
+nmap <C-X><C-F> :e 
+
 
 "======================== File stuff ==============================
 filetype on         " Enable filetype detection
