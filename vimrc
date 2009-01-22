@@ -75,6 +75,10 @@ nmap <silent><F9> :NERDTreeToggle<CR>
 " reload vimrc
 nnoremap <silent><F12> :source $HOME/.vimrc<BAR> echo "reloaded vimrc!"<CR>
 
+" Open a fuzzyfilefinder like textmate
+map <S-t> :FuzzyFinderTextMate<CR>
+
+
 "======================== File stuff ==============================
 filetype on         " Enable filetype detection
 filetype indent on  " Enable filetype-specific indenting
